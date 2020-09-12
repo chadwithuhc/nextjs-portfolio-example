@@ -11,6 +11,7 @@ collections:
     create: true
     identifier_field: "title"
     slug: "{{slug}}"
+    format: "json"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Slug", name: "slug", widget: "string",pattern: ['^[a-zA-Z0-9-_]+$', "Alphanumeric with dashes or underscores"]}
