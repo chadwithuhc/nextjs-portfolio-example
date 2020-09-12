@@ -32,7 +32,7 @@ function processFiles({ inputDirectory, outputFile }) {
     }
 
     // write transformations back to original file
-    fs.writeFileSync(filePath, JSON.stringify(jsonData))
+    fs.writeFileSync(filePath, JSON.stringify(jsonData, null, 2))
   
     return jsonData
   })).then(results => {
@@ -44,7 +44,7 @@ function processFiles({ inputDirectory, outputFile }) {
     // } while (posts.length < 5000)
     
     const outputPath = path.join(process.cwd(), outputFile)
-    fs.writeFileSync(outputPath, JSON.stringify(posts))
+    fs.writeFileSync(outputPath, JSON.stringify(posts, null, 2))
     
     console.log([inputDirectory, outputFile].join(' -> '), posts.length)
   })

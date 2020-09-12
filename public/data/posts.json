@@ -1,1 +1,17 @@
-[{"title":"Introduction to NextJS","slug":"intro-to-nextjs","heroImage":"/img/screen-shot-2020-08-25-at-7.46.33-pm.png","body":"Today we're going to learn about NextJS\n\n```\nimport React from 'react'\n```\n\n![cm logo](/img/cm-logo.svg \"company logo\")","bodyHtml":"<p>Today we're going to learn about NextJS</p>\n<pre><code>import React from 'react'\n</code></pre>\n<p><img src=\"/img/cm-logo.svg\" alt=\"cm logo\" title=\"company logo\"></p>\n"}]
+[
+  {
+    "title": "Introduction to NextJS",
+    "slug": "intro-to-nextjs",
+    "date": "2020-09-12T20:21:32.004Z",
+    "heroImage": "/img/screen-shot-2020-08-25-at-7.46.33-pm.png",
+    "body": "Today we're going to learn about NextJS\n\n```\nimport React from 'react'\n```\n\n![cm logo](/img/cm-logo.svg \"company logo\")",
+    "bodyHtml": "<p>Today we're going to learn about NextJS</p>\n<pre><code>import React from 'react'\n</code></pre>\n<p><img src=\"/img/cm-logo.svg\" alt=\"cm logo\" title=\"company logo\"></p>\n"
+  },
+  {
+    "title": "Next level NextJS",
+    "slug": "next-level-nextjs",
+    "date": "2020-09-14T20:22:14.728Z",
+    "body": "Time to expand on our prior knowledge of NextJS. Let's take a look at the following code sample:\n\n```\nnode prebuild.js\n```\n\nIs this something you really want to do?",
+    "bodyHtml": "<p>Time to expand on our prior knowledge of NextJS. Let's take a look at the following code sample:</p>\n<pre><code>node prebuild.js\n</code></pre>\n<p>Is this something you really want to do?</p>\n"
+  }
+]
