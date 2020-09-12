@@ -1,0 +1,6 @@
+{
+  "title": "Next level NextJS",
+  "slug": "next-level-nextjs",
+  "date": "2020-09-14T20:22:14.728Z",
+  "body": "Time to expand on our prior knowledge of NextJS. Let's take a look at the following code sample:\n\n```\nnode prebuild.js\n```\n\nIs this something you really want to do?"
+}
