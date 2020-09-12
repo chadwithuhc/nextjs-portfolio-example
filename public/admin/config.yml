@@ -1,0 +1,18 @@
+backend:
+  name: git-gateway
+  branch: master
+  # name: test-repo
+media_folder: public/img
+public_folder: img
+collections:
+  - label: "Blog Posts"
+    name: "posts"
+    folder: "src/content/posts"
+    create: true
+    identifier_field: "title"
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string",pattern: ['^[a-zA-Z0-9-_]+$', "Alphanumeric with dashes or underscores"]}
+      - {label: "Hero Image", name: "heroImage", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}

@@ -1,11 +1,12 @@
 {
-  "name": "demo-site",
+  "name": "demo-admin",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "npm run build && next export"
   },
   "dependencies": {
     "next": "9.5.3",
