@@ -1,0 +1,6 @@
+{
+  "title": "Introduction to NextJS",
+  "slug": "intro-to-nextjs",
+  "heroImage": "/img/screen-shot-2020-08-25-at-7.46.33-pm.png",
+  "body": "Today we're going to learn about NextJS\n\n```\nimport React from 'react'\n```\n\n![cm logo](/img/cm-logo.svg \"company logo\")"
+}
