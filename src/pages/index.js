@@ -5,7 +5,7 @@ export default function Home() {
     <Layout>
       <section className="section">
         <h1 className="title has-text-centered">Welcome to my Portfolio</h1>
-        <h2 className="subtitle has-text-centered">built with NextJS</h2>
+        <h2 className="subtitle has-text-centered">built with NextJS and Netlify CMS</h2>
       </section>
     </Layout>
   )
