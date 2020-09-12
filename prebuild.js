@@ -30,6 +30,9 @@ function processFiles({ inputDirectory, outputFile }) {
     if (jsonData.body) {
       jsonData.bodyHtml = (await remark().use(html).process(jsonData.body)).toString()
     }
+    if (jsonData.date) {
+      jsonData.dateFormatted = (new Date(jsonData.date)).toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })
+    }
 
     // write transformations back to original file
     fs.writeFileSync(filePath, JSON.stringify(jsonData, null, 2))

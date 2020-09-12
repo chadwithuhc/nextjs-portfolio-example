@@ -3,7 +3,7 @@ import Layout from '../components/Layout'
 export default function Projects({ repos = [] }) {
   return (
     <Layout title="Projects">
-      <h1>Projects</h1>
+      <h1 className="title">🛠 Projects</h1>
       <section className="grid-two-column">
       {repos.map(repo => (
         <div key={repo.id} className="box">

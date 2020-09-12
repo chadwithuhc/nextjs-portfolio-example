@@ -11,11 +11,11 @@ export default function Layout({ title = 'Portfolio', children = [] }) {
 
       <Navbar />
       
-      <main className="content main-content">
+      <main className="main-content">
         {children}
       </main>
 
-      <footer>
+      <footer className="mb-6">
         &copy; {(new Date()).getFullYear()}
       </footer>
     </div>
