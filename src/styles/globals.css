@@ -26,7 +26,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
-.hero-image {
+.cover-image {
   background-size: cover;
   background-position: 50% 50%;
   height: 20rem;

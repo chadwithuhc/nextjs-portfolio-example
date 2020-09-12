@@ -11,7 +11,7 @@ export default function Navbar() {
         </Link>
       </div>
 
-      <div id="navbarBasicExample" className="navbar-menu is-active">
+      <div className="navbar-menu is-active">
         <div className="navbar-start">
           <Link href="/projects">
             <a className="navbar-item">

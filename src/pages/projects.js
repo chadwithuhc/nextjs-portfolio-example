@@ -16,7 +16,7 @@ export default function Projects({ repos = [] }) {
                   {repo.description || <em>No Description</em>}
                 </p>
                 <p>
-                  <a href={repo.html_url} className="button is-text" target="_blank" rel="nolink noreferrer">View on Github</a>
+                  <a href={repo.html_url} className="button is-text" target="_blank" rel="noopener noreferrer">View on Github</a>
                 </p>
               </div>
             </div>
@@ -29,15 +29,15 @@ export default function Projects({ repos = [] }) {
 }
 
 // runs at build time only
-export async function getStaticProps(context) {
+export async function getStaticProps() {
   const response = await fetch(`https://api.github.com/users/chadwithuhc/repos`)
   const result = await response.json()
 
   result.sort((a,b) => new Date(b.updated_at) - new Date(a.updated_at))
 
   return {
-    // will be passed to the page component as props
     props: {
+      // will be passed to the page component as props
       repos: result.filter(repo => !repo.fork).slice(0, 10)
     },
   }

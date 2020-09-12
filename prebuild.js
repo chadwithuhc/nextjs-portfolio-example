@@ -41,7 +41,7 @@ function processFiles({ inputDirectory, outputFile }) {
   })).then(results => {
     const posts = results.filter(Boolean)
 
-    // plump it up
+    // plump it up for performance testing
     // do {
     //   [...posts].map(post => posts.push(post))
     // } while (posts.length < 5000)
