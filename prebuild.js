@@ -45,6 +45,9 @@ function processFiles({ inputDirectory, outputFile }) {
     // do {
     //   [...posts].map(post => posts.push(post))
     // } while (posts.length < 5000)
+
+    // sort
+    posts.sort((a, b) => new Date(b.date) - new Date(a.date))
     
     const outputPath = path.join(process.cwd(), outputFile)
     fs.writeFileSync(outputPath, JSON.stringify(posts, null, 2))
